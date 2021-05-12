@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body style="max-width:50%;margin:auto;">
+    <h4 class="center-align">Register</h4>
+    <form action="/register/" method="post">
+        {% csrf_token %}  
+        {{ form.as_p }}  
+        <div class="center-align">
+            <button type="submit" class="btn purple darken-1 waves-effect waves-light">Register</button><br><br>
+            <a class="waves-effect waves-orange btn-flat indigo-text" style="font-size:17px;" href="/">Log IN</a>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
